@@ -2,6 +2,7 @@ body {
     margin: 0;
 
     background-color: #fff;
+
     font-family: 'Rubik', sans-serif;
     font-size: 16px;
     line-height: 1.4;
@@ -66,25 +67,39 @@ ol {
 
     margin-top: 17px;
 
+
+    position: relative;
+    z-index: 5;
+    color: #fff;
+
 }
 
 
 /* Page */
 .page {
-    background-image: url(/img/Background.jpg);
+    background: url(/img/Background.jpg), 0px 0px no-repeat;
+    background-size: cover;
 
+    width: 100%;
 
-    background-size: 100%;
     background-repeat: no-repeat;
-
     min-height: 100vh;
     overflow: hidden;
-    z-index: 0;
+
 
 }
 
-.header__logo {
-    z-index: 20;
+.page::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
 }
 
 .header__inner {
@@ -92,7 +107,7 @@ ol {
     justify-content: space-between;
     align-items: center;
     text-transform: uppercase;
-    z-index: 20;
+
 }
 
 .nav__link {
@@ -103,15 +118,11 @@ ol {
     line-height: 12px;
     font-family: 'Rubik';
     font-style: normal;
-    margin-right: 60px;
-    z-index: 20;
 
 
 }
 
-.call {
-    z-index: 2;
-}
+
 
 .nav__link--call {
     font-size: 12px;
@@ -120,27 +131,59 @@ ol {
     color: #fff;
     border-radius: 100px;
     text-transform: initial;
-    z-index: 20;
+
 }
 
 
-.call__button {
-    text-decoration: none;
-    color: #000;
+.header__title {
+    margin-top: 180px;
+    width: 728px;
+    height: 170px;
 }
 
-.nav {
-    display: flex;
-    justify-content: space-between;
+.title__text {
+    font-family: 'Lexend Deca', sans-serif;
+
+    font-weight: 700;
+    font-size: 36px;
+
+    color: #fff;
+    font-style: normal;
+
+
+}
+
+.titile__green {
+    color: #4CAB30;
+}
+
+.header__text {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    color: #fff;
+}
+
+.btn {
+
+    display: inline-block;
+    color: #fff;
+    padding: 15px 50px;
+    border-radius: 30px;
+    background-color: #397D25;
+    border: 2px solid #fff;
+    cursor: pointer;
+    text-align: center;
+
 }
 
 
-.img {
+
+.woodboard {
     position: absolute;
-    top: -260px;
-    display: block;
-    height: auto;
-    max-width: 100%;
-    z-index: 1;
     overflow: hidden;
+    right: -327px;
+    top: 0;
+    width: 570px;
+    height: auto;
+
 }
