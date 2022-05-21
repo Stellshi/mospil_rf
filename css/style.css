@@ -277,3 +277,27 @@ ol {
     padding-bottom: 150px;
     text-align: center;
 }
+
+
+.obj__text {
+    color: #fff;
+    font-family: serif;
+    width: 110px;
+    font-size: 14px;
+    text-align: center;
+
+}
+
+
+.obj__flex {
+   padding: 0 100px;
+    display: flex;
+    justify-content: space-around;
+
+
+
+}
+
+.obj__img {
+    text-align: center;
+}
