@@ -290,10 +290,11 @@ ol {
 
 
 .obj__flex {
-   padding: 0 100px;
+    padding: 0 100px;
     display: flex;
     justify-content: space-around;
 
+    margin-bottom: 150px;
 
 
 }
@@ -303,3 +304,31 @@ ol {
 }
 
 
+
+
+
+.bnt--opacity {
+
+    
+    background-color: rgba(0, 0, 0, .1);
+
+    border: #397D25 solid 2px;
+    box-shadow: 0 0 20px #397D25;
+
+
+
+
+    display: inline-block;
+    color: #fff;
+    padding: 15px 50px;
+    border-radius: 30px;
+
+
+    cursor: pointer;
+    text-align: center;
+}
+
+
+.btn__center{
+    text-align: center;
+}
